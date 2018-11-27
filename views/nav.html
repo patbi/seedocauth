@@ -1,0 +1,10 @@
+<div class="branding"><a ng-href="#/">AngularJS[AngularFire 2] APP</a></div>
+<ul>
+	<li ng-show="user.first"><a ui-sref="#" ng-click="signout(user)">Sign Out</a></li>
+	<li><a ng-hide="user.first" ui-sref="login">Login</a></li>
+	<li><a ng-hide="user.first" ui-sref="register">Register</a></li>
+	<li><a ng-hide="user.first" ui-sref="chat">Chat</a></li>
+</ul>
+<ul ng-show="user.first">
+	<li><a ui-sref="account">Welcome back, {{ user.first }}!</a></li>
+</ul>
